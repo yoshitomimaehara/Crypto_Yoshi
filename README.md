@@ -2,8 +2,6 @@
 
 Programas Usados hechos para el curso de Metodos Criptograficos
 
-**Lenguaje :** Python
-
 Teoria de Numeros
 -----------------
 - Algoritmo de Euclides
@@ -28,3 +26,5 @@ Cifrados
 - ElGamal
 - Massey - Omura
 - Merkle - Hellman
+
+**Lenguaje :** Python
