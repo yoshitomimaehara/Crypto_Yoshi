@@ -5,7 +5,7 @@ Programas Usados hechos para el curso de Metodos Criptograficos
 Teoria de Numeros
 -----------------
 - Algoritmo de Euclides
-- Algoritmo de Extendido de Eulides(Algoritmo de Bezout)
+- Algoritmo de Extendido de Euclides(Algoritmo de Bezout)
 - Exponenciacion Modular
 - Teorema de Euler
 - Orden de un Grupo Multiplicativo
