@@ -265,7 +265,8 @@ def inv(a, b):
     return inv
 
 
-#extraido de ent_py
+# extraido de ent_py
+# http://igm.univ-mlv.fr/~jyt/Crypto/4/ent.py
 def raizprimitiva(p):
 
     if p == 2:
