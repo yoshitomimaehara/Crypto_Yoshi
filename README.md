@@ -24,6 +24,8 @@ Cifrados
 - Diffie - Hellman
 - RSA
 - ElGamal
+  - Para Numeros Largos
+  - Alternativo
 - Massey - Omura
 - Merkle - Hellman
 - Rabin
