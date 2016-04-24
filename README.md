@@ -26,5 +26,6 @@ Cifrados
 - ElGamal
 - Massey - Omura
 - Merkle - Hellman
+- Rabin
 
 **Lenguaje :** Python
