@@ -23,19 +23,3 @@ class MasseyOmura:
         exp = teoria_numeros.inv(self.d, self.q)
         m = teoria_numeros.exponenciacion(encrypt, exp, self.q)
         return m
-
-if __name__ == "__main__":
-    A = MasseyOmura()
-    B = MasseyOmura()
-    A.setQ(53)
-    B.setQ(53)
-    A.setCD(3)  # en realidad este es c
-    B.setCD(7)  # en realidad este es d
-    p1 = A.encrypt(13)
-    print(p1)
-    p2 = B.encrypt(p1)
-    print(p2)
-    p3 = A.decrypt(p2)
-    print(p3)
-    p4 = B.decrypt(p3)
-    print(p4)

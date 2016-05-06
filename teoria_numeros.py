@@ -91,8 +91,9 @@ def check(a, s, d, n):
 
 # test de Miller Rabin
 def esprimo(n, k=20):
-    if n == 2:
+    if n == 2 or n == 3:
         return True
+    # comprueba si es par
     if not n & 1:
         return False
 
@@ -237,7 +238,6 @@ def primosmenores(n):
     return result
 
 
-#refactorizar
 def euler(n):
     primos = []
     if esprimo(n) is True:
@@ -247,7 +247,8 @@ def euler(n):
         i = 0
         prod = 1
         while i < len(primos):
-            prod = float(prod) * (float(1) - (float(1) / float(primos[i])))
+            calcpar = (float(1) - (float(1) / float(primos[i])))
+            prod = float(prod) * calcpar
             i = i + 1
         totient = n * prod
     return totient
@@ -301,8 +302,9 @@ def generador(n):
     print(("Cant generadores = " + str(int(cant))))
 
     for i in range(0, len(num)):
-        if euler(n) % num[i] == 0:
+        if totient % num[i] == 0:
             p.append(num[i])
+
     table = dict.fromkeys(p)
     for i in range(0, len(p)):
         k = 0
@@ -453,7 +455,7 @@ if __name__ == "__main__":
     #print ((factorizacion_primos_unica(6)))
     #print ((logdiscreto(7, 57, 71)))
     #print ((primosmenores(37)))
-    #print ((generador(97)))
+    print ((generador(2)))
     #print ((descomposicion2expo(97)))
     #print ((jacobi(7, 23)))
     #print ((raizcuadradaprima(132, 17, 14)))

@@ -134,7 +134,7 @@ class MerkleHellman:
         return self.pubkey
 
     def getPrivateKey(self):
-        mh.getWinverse()
+        self.getWinverse()
         return [self.mu, int(self.winv)]
 
     def messagetobin(self, message):
@@ -228,26 +228,3 @@ class MerkleHellman:
             PK.append(int((S[i] * winv) % mu))
 
         return PK
-
-
-if __name__ == "__main__":
-        mh = MerkleHellman()
-        mh.setM(8)
-        #mh.generateMu()
-        mh.setMu(257)
-        #mh.generateMochilasimple()
-        mh.setMochilasimple([1, 2, 4, 8, 16, 32, 64, 128])
-        #mh.generateW()
-        mh.setW(21)
-        #print((mh.getWinverse()))
-        #print((mh.getPublicKey()))
-        #print((mh.getAlpha()))
-        #print((mh.messagetobin("h")))
-        #print((mh.tobase10([[0, 0, 0, 1, 0, 0, 1]
-        #, [1, 0, 1, 0, 0, 1, 1]
-        #, [0, 0, 1, 1, 0, 1, 1]
-        #, [0, 0, 1, 1, 0, 1, 1]
-        #, [1, 1, 1, 1, 0, 1, 1]])))
-        print((mh.encrypt("Hola Amigo")))
-        print((mh.decrypt([242, 424, 418, 238, 227, 59, 197, 431, 290, 461, 587])))
-        #print((mh.shammirzippel([3241, 572, 2163, 1256, 3531], 4089)))

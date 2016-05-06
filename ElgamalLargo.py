@@ -63,18 +63,3 @@ class ElgamalLargo:
         res2 = teoria_numeros.inv(res, self.p)
         m = (encrypt[1] * res2) % self.p
         return int(m)
-
-
-if __name__ == "__main__":
-    ga = ElgamalLargo()
-    ga.setP(29814247963667)
-    #ga.generateG()
-    ga.setG(29732038363607)
-    #ga.generate(a)
-    ga.setA(25)
-    #ga.generateR()
-    ga.setR(89)
-    #print((ga.getPublicKey()))
-    #print((ga.encrypt(19)))
-    #print((ga.decrypt([131, 45])))
-    print(())

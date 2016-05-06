@@ -58,23 +58,3 @@ class Elgamal:
         res2 = teoria_numeros.inv(res, self.p)
         m = (encrypt[1] * res2) % self.p
         return int(m)
-
-
-if __name__ == "__main__":
-    ga = Elgamal()
-    gb = Elgamal()
-    #gc = Elgamal()
-    ga.setP(71)
-    gb.setP(71)
-    #gc.setP(37)
-    #ga.generateG()
-    ga.setG(7)
-
-    #ga.generate(a)
-    ga.setA(26)
-    #ga.setGA(3)
-    #ga.generateR()
-    ga.setR(73)
-    ga.getPublicKey()
-    print((ga.encrypt(30)))
-    #print((ga.decrypt([131, 45])))

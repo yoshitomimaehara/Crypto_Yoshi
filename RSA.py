@@ -175,26 +175,4 @@ class RSA:
         result = self.toChara(temp3)
 
         return result
-
-
-if __name__ == "__main__":
-    #A = RSA()
-    B = RSA()
-    rsa = RSA()
-    part = rsa.messagePartitions("H", 1)
-    print(part)
-    #A.setN(35)
-    B.setPQ(3, 11)
-    #print((B.getN()))
-    #A.setPublickey(5)
-    B.setPublickey(3)
-    #print((A.getPrivatekey()))
-    #print((B.getPrivatekey()))
-    #print((A.encrypt("HOLA", 1)))
-    print((B.decrypt('08111701', 1)))
-    #print rsa.getAlpha().get('B')
-    print((rsa.toDigits(part, 1)))
-    #print rsa.toChara(["01"],2)
-    #print rsa.eulerSpecial()
-    #print rsa.getPrivatekey()
-    #print teoria_numeros.exponenciacion(8,5,35)
+		

@@ -35,7 +35,7 @@ class Rabin:
     def decrypt(self, C):
         CR = []  # conjunto de Raices
         PM = []  # Posibles M
-        r.generatePQ()
+        self.generatePQ()
         base = ((self.b ** 2) * teoria_numeros.inv(4, self.n)) + C
         CR = teoria_numeros.raizcuadradacompuesta(base, self.p, self.q, self.b)
         print(CR)
@@ -43,13 +43,3 @@ class Rabin:
         for i in range(0, len(CR)):
             PM.append((CR[i] - temp) % self.n)
         print(PM)
-
-
-if __name__ == "__main__":
-    r = Rabin()
-    r.setPublicKey(77)
-    #r.generateB()
-    r.setB(9)
-    print ((r.encrypt(2)))
-    #r.generatePQ()
-    r.decrypt(22)
